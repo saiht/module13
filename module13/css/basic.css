@@ -31,6 +31,8 @@ ul {
 a {
 	text-decoration: none;
   color: inherit;
+  width: 100%;
+  height: 100%;
 }
 p {
   margin: 0;
@@ -51,8 +53,12 @@ h1, h2, h3, h4, h5, h6, header nav ul li {
 header p, footer>p {
   color: rgba(255, 255, 255, 1);
 }
-header nav, header div#presentation h1, header div#presentation p, main section, footer p, footer nav {
+header nav, header div#presentation h1, main section, footer p, footer nav {
   max-width: 80%;
+  margin: 0 auto;
+}
+header div#presentation p {
+  max-width: 90%;
   margin: 0 auto;
 }
 h1, h2, h3, h4, h5, h6, header p, footer p, footer nav a, header nav ul li {
@@ -64,14 +70,17 @@ h1 {
 /**** End Surcharges ****/
 
 /**** Start Header ****/
+header {
+  background-color: #FCFCFC;
+}
 header p {
   font-size: 2em;
   font-weight: bold;
 }
 header div#presentation {
-  background: url("../img/background.jpg") no-repeat center left;
-  background-size: 100% auto;
-  padding: 10% 0;
+  background: url("../img/background.jpg") no-repeat center fixed;  /* Stylé en mode parallax */
+  background-size: cover;
+  padding: 15% 0;
 }
 header nav ul, footer nav {
   display: flex;
@@ -80,8 +89,7 @@ header nav ul, footer nav {
   align-items: center;
 }
 header nav ul li {
-  font-size: 1.1em;
-  font-weight: 900;
+  font-size: 1.6em;
 }
 header nav ul li span {
   display: none;
