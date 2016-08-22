@@ -1,9 +1,12 @@
 @charset "UTF-8";
 
 /**** Start Main ****/
+header h1 {
+  color: #fff;
+}
 main section h2 {
-  padding: 15px;
-  border: dashed rgba(29, 58, 74, 0.5) 1px;
+  padding: 20px;
+  border: dashed #213E4E 1px;
   border-bottom: none;
 }
 main section article.article_item {
