@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+/**** Start Main ****/
+main section h2 {
+  padding: 15px;
+  border: dashed rgba(29, 58, 74, 0.5) 1px;
+  border-bottom: none;
+}
+main section article.article_item {
+  float: left;
+  width: 32%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+main section article.article_item:first-of-type, main section article.article_item:last-child {
+  margin-left: 0;
+  margin-right: 0;
+}
+main section article.article_item h3 {
+  color: #FB8B9B;
+  font-weight: bold;
+}
+main section article.article_item h3>span {
+  display: block;
+  font-size: 1.5em;
+  font-family: "Open Sans", cursive;
+  font-weight: normal;
+}
+/**** End Main ****/

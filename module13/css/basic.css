@@ -1,0 +1,132 @@
+@charset "UTF-8";
+/**** Start Surcharges ****/
+.clearfix::after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+}
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1em;
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 2;
+  font-size: 1.1em;
+  color: #1D3A4A;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a {
+	text-decoration: none;
+  color: inherit;
+}
+p {
+  margin: 0;
+}
+h1 {
+  font-size: 3em;
+}
+h2 {
+  font-size: 1.8em;
+}
+h3 {
+  font-size: 1.2em;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Candal', sans-serif;
+}
+header p, header h1, footer>p {
+  color: rgba(255, 255, 255, 1);
+}
+header nav, header div#presentation h1, header div#presentation p, main section, footer p, footer nav {
+  max-width: 80%;
+  margin: 0 auto;
+}
+h1, h2, h3, h4, h5, h6, header p, footer p, footer nav a, header nav ul li {
+  text-align: center;
+}
+h1 {
+  font-weight: normal;
+}
+/**** End Surcharges ****/
+
+/**** Start Header ****/
+header p {
+  font-size: 2em;
+  font-weight: bold;
+}
+header div#presentation {
+  background: url("../img/background.jpg") no-repeat center left;
+  background-size: 100% auto;
+  padding: 10% 0;
+}
+header nav ul, footer nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav ul li {
+  font-size: 1.3em;
+  font-weight: 900;
+}
+header nav ul li span {
+  display: none;
+}
+header nav ul li:hover span {
+  display: block;
+  color: #FB8B9B;
+  font-size: 1.5em;
+}
+header nav ul li a img {
+  transform: scale(0.8);
+}
+/**** End Header ****/
+
+/**** Start Main ****/
+main>input {
+  background-color: #FB8B9B;
+  text-transform: uppercase;
+  color: #fff;
+  width: 100%;
+  padding: 10px 10%;
+  border: none;
+  font-size: 1.6em;
+}
+main section {
+  margin: 60px auto;
+}
+main section:last-child {
+  margin-bottom: 40px;
+}
+
+/**** End Main ****/
+
+/**** Start Footer ****/
+footer {
+  background-color: #213E4E;
+  color: #fff;
+  padding: 50px 0;
+}
+footer nav {
+  padding: 15px 0;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+footer p {
+  padding-bottom: 15px;
+}
+
+/**** End Footer ****/
