@@ -20,7 +20,7 @@ body {
   margin: 0 auto;
   font-family: 'Open Sans', sans-serif;
   line-height: 2;
-  font-size: 1.1em;
+  font-size: 1.3em;
   color: #666;
 }
 ul {
@@ -89,15 +89,18 @@ header nav ul, footer nav {
   align-items: center;
 }
 header nav ul li {
-  font-size: 1.6em;
+  font-size: 1.4em;
 }
 header nav ul li span {
   display: none;
+  transition: all 1s ease 0s;
 }
 header nav ul li:hover span {
   display: block;
   color: #FB8B9B;
   font-size: 1.5em;
+  transition: all 1s ease 0s;
+
 }
 header nav ul li a img {
   transform: scale(0.8);
