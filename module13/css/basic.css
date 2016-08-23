@@ -1,8 +1,5 @@
 @charset "UTF-8";
 /**** Start Surcharges ****/
-* {
-  transition: 0.5s ease-in-out 0s;
-}
 .clearfix::after {
   clear: both;
   content: ".";
@@ -141,6 +138,9 @@ footer nav {
   font-weight: bold;
   font-size: auto;
   vertical-align: top;
+}
+footer nav a:hover {
+  transform: scale(120%);
 }
 footer p {
   padding-bottom: 15px;
