@@ -33,7 +33,6 @@ main section div.articles article.article2_item ul {
   margin: 15px 0;
 }
 main section div.articles article.article2_item ul li {
-  font-size: 1em;
   list-style: circle;
 }
 main section div.articles article.article2_item p {
@@ -50,8 +49,6 @@ main section div.articles article.article2_item h2 {
   overflow: hidden;
   white-space: nowrap;
 }
-main section div.articles article.article2_item div {
-}
 main section div.articles article.article2_item div button {
   border: none;
   background-color: #FB8B9B;
@@ -61,4 +58,35 @@ main section div.articles article.article2_item div button {
   font-weight: bold;
   width: 100%;
 }
+main section div.articles article.article2_item div button:hover {
+  border-radius: 15px;
+}
+main section div.articles article.article2_item div button:focus {
+  filter: sepia(50%);
+}
 /**** End Main ****/
+
+/**** MEDIAS QUERIES ****/
+@media all and (max-device-width:720px) {
+  * {
+    transition: 0.5s ease-in-out 0s;
+  }
+  main section > p {
+    margin-bottom: 10px;
+  }
+  main section div.articles {
+    flex-direction: column;
+  }
+  main section div.articles article.article2_item {
+    width: 100%;
+    padding: 30px 0;
+    border: none;
+    border-bottom: dashed #213E4E 1px;
+  }
+  main section div.articles article.article2_item div {
+    text-align: center;
+  }
+  main section div.articles article.article2_item div button {
+    width: 30%;
+  }
+}

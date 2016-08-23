@@ -30,3 +30,12 @@ main section article.article_item h3>span {
   font-weight: normal;
 }
 /**** End Main ****/
+
+/**** MEDIAS QUERIES ****/
+@media all and (max-device-width:720px) {
+  main section article.article_item {
+    float: none;
+    margin: 0;
+    width: 100%;
+  }
+}

@@ -1,5 +1,8 @@
 @charset "UTF-8";
 /**** Start Surcharges ****/
+* {
+  transition: 0.5s ease-in-out 0s;
+}
 .clearfix::after {
   clear: both;
   content: ".";
@@ -100,7 +103,6 @@ header nav ul li:hover span {
   color: #FB8B9B;
   font-size: 1.5em;
   transition: all 1s ease 0s;
-
 }
 header nav ul li a img {
   transform: scale(0.8);
@@ -123,7 +125,7 @@ main section {
 main section:last-child {
   margin-bottom: 40px;
 }
-main section p, main section div.articles article.article2_item ul li {
+main section p {
   font-size: 1.1em;
 }
 /**** End Main ****/
@@ -137,10 +139,28 @@ footer {
 footer nav {
   padding: 15px 0;
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: auto;
+  vertical-align: top;
 }
 footer p {
   padding-bottom: 15px;
 }
 
 /**** End Footer ****/
+
+
+/**** MEDIAS QUERIES ****/
+@media all and (max-device-width:720px) {
+  * {
+    transition: 0.5s ease-in-out 0s;
+  }
+  header nav ul, footer nav {
+    flex-direction: column;
+  }
+  header nav ul li, footer nav a {
+    padding: 10px 0;
+  }
+  header nav ul li:hover span {
+    display: none;
+  }
+}
