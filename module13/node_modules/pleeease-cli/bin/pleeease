@@ -1,0 +1,18 @@
+#!/usr/bin/env node
+
+var program = require('commander');
+
+var CLI     = require('../lib/cli');
+
+var version    = require('../package.json').version;
+var versionPkg = require('../node_modules/pleeease/package.json').version;
+
+program.
+    version('pleeease-cli ' + version + '\npleeease     ' + versionPkg).
+    command('compile [file...]', 'compile one more files').
+    command('watch [file...]'  , 'watch for changes and compile').
+    parse(process.argv);
+
+if (process.argv.length === 2) {
+    return program.help();
+};
